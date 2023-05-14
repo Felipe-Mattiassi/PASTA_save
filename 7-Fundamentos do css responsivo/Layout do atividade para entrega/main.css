@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(77, 139, 255);
+    color: #fff;
+    margin-bottom: 54px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.quebra-linha{
+    display: none;
+}
+
+header >.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header form ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-left: 18px;
+}
+
+.imagem {
+    margin-bottom: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: medium;
+    font-style: italic;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+#sobre .container {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 1%;
+    margin-bottom: 54px;
+}
+
+div h2 {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    color: rgb(77, 139, 255);
+    border-bottom: 2px solid rgb(77, 139, 255) ;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    gap: 1%;
+}
+
+.produto img {
+    width: 100%;
+}
+
+button {
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(77, 139, 255);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    margin: 0.5vh 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(77, 95, 255);
+}
+
+
+@media screen and (max-width: 767px) {
+    header form ul {
+        display: block;
+    }
+
+    .linha-normal {
+        display: none;
+
+    }
+
+    .quebra-linha {
+        display: block;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .imagem {
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    #sobre .container {
+        display: block;
+        margin-bottom: 10vh;
+    }
+
+    div h2 {
+        padding-bottom: 20px;
+        margin-bottom: 3vh;
+        color: rgb(77, 139, 255);
+        border-bottom: 2px solid rgb(77, 139, 255) ;
+        font-style: italic;
+    }
+    
+    .produtos h3 {
+        font-size: 1em;
+        margin-bottom: 1vh;
+    }
+    
+    .produtos {
+        display: block;
+    }
+
+    .produtos p {
+        font-size: 0.8em;
+    }
+
+    button {
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    #sobre .container {
+        display: block;
+        margin-bottom: 10vh;
+    }
+    
+    .imagem {
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+    
+    .imagem img {
+        width: 100%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 49.5% 49.5%;
+        gap: 1%;
+    }
+
+}
+
+
